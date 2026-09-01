@@ -2,7 +2,8 @@ import * as vscode from 'vscode';
 import { registerCommands } from './commands/registerCommands';
 import { AssetStorage } from './assets/AssetStorage';
 
-const EXTENSION_NAME = "sample-extension";
+// TODO: [TEMPLATE] ↓ 拡張機能名に応じて設定します
+const EXTENSION_NAME = "extension-template-pwsh";
 
 export function activate(context: vscode.ExtensionContext) {
 	console.log(`${EXTENSION_NAME} activated.`);

@@ -1,3 +1,7 @@
+# TODO: [TEMPLATE]
+## modulesから認証処理を利用したサンプルです。
+## 他の [TEMPLATE] も併せて編集してください。
+
 Import-Module "$PSScriptRoot/../../modules/Assert-AzureAuth.psm1" -Force
 Import-Module "$PSScriptRoot/../modules/Assert-GitHubAuth.psm1" -Force
 

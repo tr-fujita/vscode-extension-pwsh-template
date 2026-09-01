@@ -1,8 +1,8 @@
 import * as process from "node:process";
 import * as vscode from "vscode";
 
-// TASK_TYPEは、他の拡張機能と重複しないようにします
-const TASK_TYPE = "sample-extension.b724f99c-224d-4b47-824b-3af95d45e921.ShellScript";
+// TODO: [TEMPLATE] ↓ 他の拡張機能と被らないようにしてください
+const TASK_TYPE = "extension-template.b724f99c-224d-4b47-824b-3af95d45e921.ShellScript";
 
 export async function runPowerShellScript(
   scriptUri: vscode.Uri,
