@@ -8,7 +8,7 @@ export class AssetStorage {
   /**
    * @param pathFromRoot
    * 先頭に '/' は含めないでください。
-   * 'src/' 内のファイルを指定しないでください。
+   * 成果物へのパスを指定します。
    */
   public getUri(pathFromRoot: string): vscode.Uri {
     return vscode.Uri.joinPath(this.context.extensionUri, pathFromRoot);
@@ -17,7 +17,7 @@ export class AssetStorage {
   /**
    * @param pathFromRoot
    * 先頭に '/' は含めないでください。
-   * 'src/' 内のファイルを指定しないでください。
+   * 成果物へのパスを指定します。
    */
   public async loadJson<T>(pathFromRoot: string): Promise<T> {
     const uri = this.getUri(pathFromRoot);
