@@ -10,7 +10,7 @@ const sample = async (
 ): Promise<void> => {
   await runPowerShellScript(
     // TODO: [TEMPLATE] ↓ rootから見た、スクリプトへのパスを書きます
-    asset.getUri("powerShell/scripts/sample.ps1"),
+    asset.getUri("dist/powerShell/scripts/sample.ps1"),
     TASK_NAME
   );
 };
