@@ -9,8 +9,8 @@ const sample = async (
   asset: AssetStorage
 ): Promise<void> => {
   await runPowerShellScript(
-    // TODO: [TEMPLATE] ↓ rootから見た、スクリプトへのパスを書きます
-    asset.getUri("dist/powerShell/scripts/sample.ps1"),
+    // TODO: [TEMPLATE] ↓ スクリプトのパスを書きます
+    asset.getUri("powerShell/scripts/sample.ps1"),
     TASK_NAME
   );
 };
