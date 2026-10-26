@@ -6,7 +6,8 @@ const TASK_TYPE = "extension-template.b724f99c-224d-4b47-824b-3af95d45e921.Shell
 
 export async function runPowerShellScript(
   scriptUri: vscode.Uri,
-  taskName: string
+  taskName: string,
+  ...args: (string | vscode.ShellQuotedString)[]
 ): Promise<void> {
   const isSameTask = vscode.tasks.taskExecutions.some(t =>
     t.task.definition.type === TASK_TYPE &&
@@ -31,7 +32,8 @@ export async function runPowerShellScript(
       [
         "-NoProfile",
         "-ExecutionPolicy", "Bypass",
-        "-File", scriptUri.fsPath
+        "-File", scriptUri.fsPath,
+        ...args ?? []
       ]
     )
   );
